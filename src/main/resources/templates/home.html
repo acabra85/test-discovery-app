@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <script type="text/javascript" th:src="@{/js/oneagent.js}"></script>
+    <script type="text/javascript" th:src="@{/js/consolelogger.js}"></script>
+</head>
+<body>
+<h1>Hello !</h1>
+<p>Welcome to <span th:text="${appName}">Our App</span></p>
+<button type="button" th:onclick="logSomething();">Log In console</button>
+</body>
+</html>
